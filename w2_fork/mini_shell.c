@@ -4,7 +4,25 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
-  
+
+/*
+    char *argv[10];
+	char str[256];
+	int iter = 0;
+	scanf("%[^\n]", str);
+	char *token;
+	token = strtok (str," ");
+	while (token != NULL) {
+		argv[iter] = token;
+		iter++;
+		token = strtok (NULL, " ");
+		if(token == NULL) {
+			argv[iter] = NULL;
+		}
+	}
+	execvp(argv[0],argv);
+*/
+
 int main() {
     char *argv[10];
     char command[1024];
